@@ -173,18 +173,20 @@ background-color: var(--clr-primary-500);
     background-color: var(--clr-neutral-100);
     border-radius: 0.5rem;
     overflow: hidden;
+    max-width: 600px ;
 
 }
 
 @media (min-width: 600px) {
 .product {
+    --content-padding: 2rem;
     grid-template-columns: 1fr 1fr ;
 }
 
 }
 
 .product__content {
-    border: 3px solid red;
+ 
     display: grid;
     gap: var(--content-spacing);
     padding: var(--content-padding);
