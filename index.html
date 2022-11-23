@@ -27,8 +27,11 @@
   <main>
 
     <article class="product">
+
       <picture class="product__img">
+        <source srcset="images/image-product-desktop.jpg" media="(min-width: 600px)"> 
         <img src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum bottle laying flat on a table">
+      
       </picture>
 
       <div class="product__content">
@@ -54,7 +57,8 @@
           </p>
         </div>
 
-        <button class="button">Add to Cart</button>
+        <button class="button"
+        data-icon="shopping-cart">Add to Cart</button>
 
       </div>
 
