@@ -118,47 +118,49 @@ body {
 
 .visually-hidden:not(:focus):not(:active) {
 
-clip: rect(0 0 0 0);
-clip-path: insert(50%);
-height: 1px;
-overflow: hidden;
-position: absolute;
-white-space: nowrap;
-width: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: insert(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.button {
+    cursor: pointer;
+
+    text-decoration: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+
+    border: 0;
+    border-radius: .5rem;
+    padding: .75em 1.5em;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-bold);
+    font-size: 0.925rem;
+
 }
 
 
 .button[data-icon="shopping-cart"]::before {
     content: "";
-    background-image:url("images/icon-cart.svg") ;
+    background-image: url("images/icon-cart.svg");
     width: 15px;
     height: 16px;
-   
+
 
 }
 
-.button {
-cursor: pointer;
 
-text-decoration: none;
-
-display: inline-flex;
-justify-content: center;
-align-items: center;
-gap: .75rem;
-
-border: 0;
-border-radius: .5rem ;
-padding: .75em 1.5em;
-background-color: var(--clr-primary-400);
-color: var(--clr-neutral-100);
-font-weight: var(--fw-bold);
-font-size: 0.925rem;
-
-}
 
 .button:is(:hover, :focus) {
-background-color: var(--clr-primary-500);
+    background-color: var(--clr-primary-500);
 
 
 }
@@ -173,20 +175,20 @@ background-color: var(--clr-primary-500);
     background-color: var(--clr-neutral-100);
     border-radius: 0.5rem;
     overflow: hidden;
-    max-width: 600px ;
+    max-width: 600px;
 
 }
 
 @media (min-width: 600px) {
-.product {
-    --content-padding: 2rem;
-    grid-template-columns: 1fr 1fr ;
-}
+    .product {
+        --content-padding: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 
 .product__content {
- 
+
     display: grid;
     gap: var(--content-spacing);
     padding: var(--content-padding);
@@ -197,7 +199,7 @@ background-color: var(--clr-primary-500);
     font-size: 0.8125rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-    
+
 }
 
 .product__title {
@@ -209,9 +211,7 @@ background-color: var(--clr-primary-500);
 
 .product__price {
 
-    font-size: 2rem ;
+    font-size: 2rem;
     font-family: var(--ff-accent);
     color: var(--clr-primary-400)
-
-
 }
